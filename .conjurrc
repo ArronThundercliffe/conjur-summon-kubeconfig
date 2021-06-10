@@ -1,0 +1,12 @@
+---
+account: [conjur-account-id]
+plugins: []
+appliance_url: [https://root-conjur-url]
+cert_file: "[path-to-conjur-public-cert-file]"
+
+# Example
+# ---
+# account: myorg
+# plugins: []
+# appliance_url: https://secretsmgmt.internal
+# cert_file: "/etc/conjur-certificate.pem"
