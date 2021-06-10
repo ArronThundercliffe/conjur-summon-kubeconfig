@@ -1,0 +1,28 @@
+- !policy
+   id: [policy-name]
+   body:
+     - !host [conjur-identity-for-host]
+
+- !variable
+   id: [path-for-variable]
+
+- !permit
+   resource: !variable [path-for-variable]
+   privileges: [ read , execute ]
+   role: !host [conjur-identity-for-host]
+   
+
+# Example
+# - !policy
+#    id: k8_admin
+#    body:
+#      - !host k8/prod/cluster
+# 
+# - !variable
+#    id: prod/k8/kubeconfig
+# 
+# - !permit
+#    resource: !variable prod/k8/kubeconfig
+#    privileges: [ read , execute ]
+#    role: !host /k8_admin/k8/prod/cluster
+
