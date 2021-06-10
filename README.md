@@ -17,7 +17,7 @@ First we're going to connect to our Conjur CLI container and load our Conjur pol
 
     conjur policy load root k8_admin.yml
 
-We're then going to add our KUBECONFIG file as a variable into Conjur. For this, a KUBECONFIG file was present in the Conjur CLI docker container, named "kubeconfig". Alternatively, add a variable with a dummy value using the CLI and then use the Conjur UI to paste in the KUBECONFIG file contents.
+We're then going to add our KUBECONFIG file as a variable into Conjur. For this, a KUBECONFIG file was present in the Conjur CLI docker container, named "kubeconfig". Alternatively, add a variable with a dummy value using the CLI and then use the Conjur UI to paste in the KUBECONFIG file contents. We're going to name our variable "prod/k8/kubeconfig" to match the example configurations provided:
 
     conjur variable values add prod/k8/kubeconfig <kubeconfig
 
