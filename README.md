@@ -13,7 +13,8 @@ https://github.com/cyberark/summon-conjur
 
 # Configuration
 The following instructions use the examples shown within each file. Rename and replace as required to suit your own deployment.
-First we're going to connect to our Conjur CLI container and load our Conjur policy named "k8_admin" into the root policy:
+
+First, we're going to connect to our Conjur CLI container and load our Conjur policy named "k8_admin" into the root policy:
 
     conjur policy load root k8_admin.yml
 
